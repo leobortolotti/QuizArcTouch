@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  QuizArcTouch
+
+  Created by Leonardo Bortolotti on 08/12/19.
+  Copyright © 2019 Leonardo Bortolotti. All rights reserved.
+*/
+
+"Start" = "Start";
+"Reset" = "Reset";
+
+// Alert Win
+"Congratulations" = "Congratulations";
+"WinTextAlert" = "Good job! You found all the answers on time. Keep up with the great work.";
+"Play Again" = "Play Again";
+
+// Alert Lose
+"Time finished" = "Time finished";
+"LoseTextAlert" = "Sorry, time is up! You got %d out of %d answers.";
+"Try Again" = "Try Again";
+
+// Alert Connection Error
+"Connection error" = "Connection error";
+"Try again later." = "Try again later.";

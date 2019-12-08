@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView" customModule="QuizArcTouch" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="WC0-Y4-tTB" id="8qL-VX-pIc"/>
+                <outlet property="containerView" destination="GWo-nT-GFn" id="YkX-25-aQt"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="SiY-bK-IMz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zp1-8F-dab">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWo-nT-GFn">
+                    <rect key="frame" x="87.5" y="258.5" width="200" height="150"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="WC0-Y4-tTB">
+                            <rect key="frame" x="70" y="25" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="WC0-Y4-tTB" secondAttribute="height" multiplier="1:1" id="O9h-lZ-PvY"/>
+                                <constraint firstAttribute="width" constant="60" id="tRu-dJ-ofd"/>
+                            </constraints>
+                            <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vi2-2c-vi0">
+                            <rect key="frame" x="16" y="97.5" width="168" height="27.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="GWo-nT-GFn" secondAttribute="height" multiplier="4:3" id="2lY-sL-MWD"/>
+                        <constraint firstAttribute="bottom" secondItem="Vi2-2c-vi0" secondAttribute="bottom" constant="25" id="CqS-QJ-9J7"/>
+                        <constraint firstItem="WC0-Y4-tTB" firstAttribute="top" secondItem="GWo-nT-GFn" secondAttribute="top" constant="25" id="HpJ-S4-MfF"/>
+                        <constraint firstAttribute="trailing" secondItem="Vi2-2c-vi0" secondAttribute="trailing" constant="16" id="adG-Jt-NAX"/>
+                        <constraint firstItem="WC0-Y4-tTB" firstAttribute="centerX" secondItem="GWo-nT-GFn" secondAttribute="centerX" id="cMb-iY-dXA"/>
+                        <constraint firstItem="Vi2-2c-vi0" firstAttribute="leading" secondItem="GWo-nT-GFn" secondAttribute="leading" constant="16" id="f6b-n4-wFg"/>
+                        <constraint firstAttribute="width" constant="200" id="taE-nP-Thn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="GWo-nT-GFn" firstAttribute="centerX" secondItem="Zp1-8F-dab" secondAttribute="centerX" id="2pQ-xX-FaN"/>
+                <constraint firstItem="Zp1-8F-dab" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WOn-CH-S07"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zp1-8F-dab" secondAttribute="trailing" id="Wdo-4k-Ihp"/>
+                <constraint firstItem="Zp1-8F-dab" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="f5G-Qu-cvR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Zp1-8F-dab" secondAttribute="bottom" id="kRj-NG-2gL"/>
+                <constraint firstItem="GWo-nT-GFn" firstAttribute="centerY" secondItem="Zp1-8F-dab" secondAttribute="centerY" id="kVY-B1-hO8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>
